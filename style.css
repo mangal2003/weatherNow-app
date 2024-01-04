@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #efc0c0;
+}
+*::selection {
+  background: #000000;
+  color: #fffb00;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#navbar {
+  background-color: #d12d2d;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: larger;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+.credit {
+  text-transform: uppercase;
+}
+.logo:hover,
+.credit > a:hover {
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  color: #fffb00;
+}
+
+#main {
+  width: 90vw;
+  margin: 0 auto;
+  min-height: calc(100vh - 7rem);
+}
+#search-box {
+  background-color: #fff;
+  max-width: 25rem;
+  margin: auto;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+}
+#ipLat,
+#ipLon {
+  width: 100%;
+  margin-right: 0.5rem;
+  padding: 0.1rem 0.4rem;
+  border: none;
+}
+#search1:hover,
+#search2:hover {
+  cursor: pointer;
+  font-weight: 600;
+  color: #d12d2d;
+}
+#weather {
+  width: 80vw;
+  max-width: 20rem;
+  background-color: #db77775b;
+  margin: 1rem auto;
+  border-radius: 0.7rem;
+  padding: 0.6rem 1rem;
+  line-height: 2rem;
+}
+.weather {
+  width: 80vw;
+  max-width: 20rem;
+  background-color: #db77775b;
+  margin: 1rem auto;
+  border-radius: 0.7rem;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  line-height: 2rem;
+}
+
+#footer {
+  width: 100%;
+  margin: auto;
+  padding: 0.3rem 1rem;
+  background-color: #000000;
+  color: rgb(197, 197, 197);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 300;
+}
+#coordinates {
+  background-color: rgb(58, 203, 82);
+  max-width: 25rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+#coordinates:hover {
+  background-color: #00f811;
+}
+.link {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0 0.4rem;
+}
+#links {
+  margin: 0.7rem auto;
+}
+#otherDetails {
+  width: 90vw;
+  max-width: 20rem;
+  margin: 3rem auto;
+  background-color: #db7777cf;
+  padding: 1.2rem;
+  line-height: 2rem;
+  border-radius: 0.3rem;
+}
+#searchBtn {
+  padding: 0.3rem 1rem;
+  margin: 1.2rem auto 0.5rem;
+  cursor: pointer;
+  border: 2px solid rgba(218, 109, 41, 0.995);
+  outline: none;
+  border-radius: 0.7rem;
+}

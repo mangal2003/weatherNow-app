@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNOW </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <navbar id="navbar">
+        <div class="logo">
+            <i class="ri-temp-cold-fill"></i>WeatherNOW
+        </div>
+        <div class="credit">
+            <a href="https://rapidapi.com/MeteosourceWeather/api/ai-weather-by-meteosource" target="_blank"><i
+                    class="ri-hand-heart-fill"></i> API</a>
+        </div>
+    </navbar>
+    <!-- Main Content -->
+    <main id="main">
+        <section id="search-box">
+            <input type="text" placeholder="Enter lattitude " id="ipLat" /> |
+            <input type="text" placeholder=" longitude" id="ipLon" />
+        </section>
+        <button id="searchBtn" onclick="check()">Search <i class="ri-search-line" id="search1"></i></button>
+        <section id="weather">
+            <span id="dateTime"> Today | <span id="date">01-01-2024</span> | <span id="time">3:00 </span> IST</span>
+            <br>
+            <span id="cityName">City/State</span><br><i class="ri-cloudy-line"></i>
+            <br>
+            <span id="temperature">
+                Temperature : <span id="inDegC">X </span> <i class="ri-celsius-line"></i> | <span id="inFar">Y </span>
+                <i class="ri-fahrenheit-line"></i>
+            </span>
+            <br>
+            Humidity : <span id="humidity"> H</span> %<br>
+            Wind Speed : <span id="windSpeed"> X </span> m/s<br>
+            Summary : <span id="summary"> summary</span><br>
+        </section>
+        Thinking of lattitude and longittude?? <br>
+        <h3 id="coordinates"><a href="https://www.latlong.net/" target="_blank">find them here</a></h3>
+
+        <br><br>
+        <h2>Other useful details</h2>
+        <div id="otherDetails">
+            <h4>
+                Visibility : <span id="visibility"> Y </span> <br>
+                UV Index : <span id="uvIndex"> UV </span> <br>
+                Pressure : <span id="pressure"> P </span> hPa <br>
+                Ozone Concentration : <span id="ozone"> O </span>
+            </h4>
+        </div>
+
+
+    </main>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="connect">
+            <p>Connect digitally at :</p>
+            <div id="links">
+
+                <a class="link" href="https://www.linkedin.com/in/shivmangal/" target="_blank"><i
+                        class="ri-linkedin-box-fill"></i></a>
+                <a class="link" href="https://www.instagram.com/_as_am_as_/" target="_blank"><i
+                        class="ri-instagram-fill"></i></a>
+                <a href="https://github.com/mangal2003" class="link" target="_blank"><i class="ri-github-fill"></i></a>
+                <a class="link" href="mailto:mangalthemars@gmail.com?subject=Hello%20
+                Shiv!"><i class="ri-mail-fill"></i></a>
+            </div>
+
+        </div>
+        Powered by&nbsp;AI Weather by Meteosource. <br>
+        Data is subject to license and copyright &copy;
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
